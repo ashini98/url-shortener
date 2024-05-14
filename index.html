@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link to external CSS for styling -->
+    <link rel="stylesheet" href="style.css" /> 
+    <title>URL-SHORTNER</title> <!--title of the web page-->
+  </head>
+  <body>
+    <div class="container"><!--main container of for the URL shortner interface-->
+      <h1>URL SHORTNER</h1> <!--heading of the application-->
+      <label for="originalURL">Enter URL to Shorten</label> <!--label for the input field-->
+      <input type="text" id="originalURL" placeholder="https://example.com/abc123"/> <!--input field for entering the URL to be shortened -->
+      <div class="button">  <!--container for the buttons-->
+        <button id="reload-btn">Reload</button> <!--button to the reload page-->
+        <button id="short-btn">Shorten URL</button> <!--button to trigger the URL sgortening process-->
+      </div>
+      <label for="shortenUrl">Shortened URL</label><!--label for the textarea that will display the shortened URL-->
+      <textarea id="shortenUrlTextarea" cols="30" rows="5" readonly></textarea><!--textarea to display the shortened URL and it's read only-->
+    </div>
+    <script src="script.js"></script><!--link to external JavaScript file that contains the functionality-->
+  </body>
+</html>
